@@ -1,0 +1,7 @@
+{
+  "installDependencies": false,
+  "startCommand": "pnpm create vike@latest --react --mantine --hono --google-analytics --cloudflare --eslint --prettier --sentry --force . && pnpm i && pnpm run dev",
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
