@@ -1,8 +1,9 @@
-import React from 'react';
-import { useData } from 'vike-react/useData';
+import React from "react";
+import { useData } from "vike-react/useData";
 
 export default function Page() {
   const { githubUser, id } = useData();
+  console.log(githubUser);
 
   return (
     <>
@@ -17,7 +18,7 @@ export default function Page() {
             </li>
           ))
         ) : (
-          <li>No followers found.</li>
+          <li>{githubUser?.message}</li>
         )}
       </ul>
     </>
